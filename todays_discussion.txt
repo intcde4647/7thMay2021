@@ -1,0 +1,114 @@
+Access Modifiers
+Packages
+Inheritance 
+Abstraction
+----------------------------------------------------------------------
+String,StringBuffer and StringBuilder
+
+What is a String?
+A group of characters
+
+For managing a String of group of characters , we have 3
+classes String,StringBuffer and StringBuilder
+
+String is immutable. Which means once created the object's content cannot
+be changed. If we use any method to change the string , basically it creates a new String object.
+
+Whereas StringBuffer and StringBuilder ar mutable which means if we 
+are making a change. The change is taking place with the same object.
+It is not creating a new String Object.
+
+StringBuffer is thread safe.
+StringBuilder is not thread safe.
+
+Thread safe means when multiple threads are trying to access a resource
+( For example in our case resource is StringBuffer object) , only one
+thread can access the object till it releases the monitor( lock) on that
+object. 
+--------------------------------------------------------------------------------------------------------------
+Packages
+
+Packages are containers for classes that are used to keep the class name space compartmentalized.
+
+Packages are stored in heirachical manner and explicitly imported into new class definitions.
+-----------------------------------------------------------------------------------------------------------
+Different access specifiers from most restricted to least restricted
+
+private==========================>default====================>protected=========================>public
+(Only within the class         (Within the package)         (By the inherited classes      (Accessible  
+ where they are declared)                                    and non inherited classes       everywhere)
+                                                             in the same package)            
+1) In the same class
+2) In the non sub class of the same package
+3) In the sub class of the same package
+4) In the non sub class of different package
+5) In the sub class of different package 
+
+
+----------------------------------------------------------------------------------------------------------
+Inheritance is the process by which one object acquires the properties of another object. It help in code 
+reusablility.
+While planning for Inheritance , check for IS-A relationship like
+example 
+Employee is a Person     ( Person will be the base/super class and Employee will be the subclass/derived class)
+ CollegeStudent is a Student  ( Student will be the base/super class and CollegeStudent will be the subclass)
+ Book is Computer would be incorrect  ( We cannot make Book as a subclass of Computer because Book is not a 
+Computer)
+---------------------------------------------------------------------------------------------------------
+
+Abstract Classes and Methods
+ Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved with either abstract classes or interfaces 
+---------------------------------------------------------------------------------------------------------------
+Features of Object Oriented Programming:-
+1) Encapsulation
+2) Inheritance
+3) Abstraction
+4) Polymorphism
+----------------------------------------------------------------------------------------------------------
+
+Encapsulation : - We create a unit which is a class and within that unit or capsule we enclose member 
+variable and member methods. We try to hide member variables by declaring them as private and
+we keep the methods exposed outside the class by declaring them as public.
+-----------------------------------------------------------------------------------------------------
+Inheritance :- Reusability of the code .
+
+Suppose we have a requirement to create two classes , one is Employee and another is Student
+For employee we require age and name followed by that we require desig,dept and basic.
+For Student class we require age,name followed by that standard and marks.
+--------------------------------------------------------------------------------------------------------
+What is Java
+What are the features of OOPS
+What are features of JAva as a language
+What are the Java Keywords
+
+What are steps of compilation to execution of the code?
+
+  Hello.java
+        ( first compiled code gets converted into a bytecode and the bytecode is an intermediate language
+     which is neither a high level language nor a machine level language and the bytecode is stored in a
+     separate file with the extension .class)
+  Hello.class
+      |
+      |
+  We excute the .class file when the bytecode is interpreted and goes to
+ the native API call of the OS.
+
+What is JVM?
+What is JRE?
+Which is the latest version?
+Which version you have used?
+Why main is declared as static?
+What are the various access specifiers.
+
+--------------------------------------------------------------------------------------------------------
+    
+
+
+
+
+
+
+
+
+
+
